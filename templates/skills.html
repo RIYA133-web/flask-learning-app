@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Skills</title>
+</head>
+<body>
+    <h1>Riiggy's Skills</h1>
+    <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    {% if 'Flask' in skills %}
+        <p>Flask is in the list! ✅</p>
+    {% else %}
+        <p>Flask not found.</p>
+    {% endif %}
+</body>
+</html>
